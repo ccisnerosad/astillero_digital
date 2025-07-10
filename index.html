@@ -69,8 +69,6 @@
             border-radius: 1.5rem;
             border: 1px solid rgba(255, 255, 255, 0.1);
             padding: 2rem;
-            width: 90dvw;
-            max-width: 1200px;
             margin: 0 auto;
         }
 
@@ -175,11 +173,12 @@
             </nav>
         </aside>
 
-        <main id="content-container" class="content-area">
+        <main id="content-container" class="content-area lg:w-[65dvw] xl:w-[75dvw]">
 
             <section id="puerto-base" class="flex items-center justify-center text-center">
                 <div>
-                    <h2 class="text-4xl lg:text-6xl font-black mb-4 uppercase">Tu Brújula en el Océano Digital</h2>
+                    <h2 class="text-4xl lg:text-4xl xl:text-6xl font-black mb-4 uppercase">Tu Brújula en el Océano
+                        Digital</h2>
                     <p class="text-lg max-w-3xl font-semibold mx-auto text-text-muted">
                         Transformamos ideas en soluciones digitales a través de un enfoque narrativo, técnico y
                         artístico basado en una metáfora marina. Cada proyecto es una <b>travesía náutica</b>, y cada
@@ -250,14 +249,14 @@
             </section>
 
             <section id="zona-evaluacion" class="flex items-center justify-center">
-                <div>
+                <div class="w-full">
                     <h2 class="text-4xl font-bold text-center mb-12"><i data-feather="box"
                             class="inline-block mr-2"></i>Embarcaciones Digitales</h2>
                     <p class="text-center max-w-3xl mx-auto mb-10 text-text-muted">El objetivo no es solo desarrollar
                         productos, sino crear una cultura de innovación estructurada, documentada y evolucionable, donde
                         cada solución tiene un propósito, aplicación y una bitácora de desarrollo.</p>
-                    <div class="grid grid-cols-1 md:grid-cols-2  gap-6 text-left md:mx-56 mx-6">
-                        <div class="card">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 text-left mx-auto lg:mx-auto sm:mx-8">
+                        <div class="card ">
                             <h4 class="font-bold text-lg text-primary">🟦 Barco de papel</h4>
                             <p class="text-md text-text-muted mt-1">Exploración ligera: prototipos visuales o scripts
                                 rápidos para validar ideas o tecnologías.</p>
@@ -634,7 +633,7 @@
                         Conoce al equipo detrás de Astillero Digital: fundador, diseñadores, desarrolladores y gestores,
                         unidos por la pasión marina.
                     </p>
-                    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-6 md:mx-56">
+                    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-6 xl:mx-56">
                         <div class="card">
                             <h3 class="text-xl font-bold text-primary">Capitán</h3>
                             <p class="text-text-muted">Líder estratégico y visionario.</p>
@@ -678,11 +677,11 @@
                     </div>
                 </div>
             </section>
+            <footer class="text-center text-sm text-text-muted lg:col-span-2 py-4">
+                <p>Astillero Digital 2025</p>
+            </footer>
         </main>
 
-        <footer class="text-center text-sm text-text-muted lg:col-span-2 py-4">
-            <p>Astillero Digital &copy; 2025</p>
-        </footer>
     </div>
 
     <script>
