@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astillero Digital: Soluciones Digitales con Rumbo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-background: #020617;
+            /* slate-950 */
+            --color-surface: #0f172a;
+            /* slate-900 */
+            --color-primary: #38bdf8;
+            /* light-blue-400 */
+            --color-secondary: #eab308;
+            /* yellow-500 */
+            --color-text: #e2e8f0;
+            /* slate-200 */
+            --color-text-muted: #94a3b8;
+            /* slate-400 */
+        }
+
+        @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(-45deg, #020617, #0d2e5a, #053e74, #1789e6);
+            background-size: 400% 400%;
+            animation: gradient-animation 10s ease infinite;
+            color: var(--color-text);
+            overflow-x: hidden;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            min-height: 100vh;
+        }
+
+        @media (min-width: 1024px) {
+            .main-grid {
+                grid-template-columns: 300px 1fr;
+            }
+        }
+
+        .content-area {
+            background-color: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            width: 90dvw;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-link {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+            color: var(--color-text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .nav-link:hover {
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .nav-link.active {
+            background-color: rgba(56, 189, 248, 0.1);
+            border-left-color: var(--color-primary);
+            color: var(--color-primary);
+            font-weight: 700;
+            transform: translateX(5px);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Oxygen', sans-serif;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            min-height: 100vh;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        .card {
+            background: rgba(2, 6, 23, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            background: rgba(56, 189, 248, 0.1);
+            border-color: var(--color-primary);
+        }
+
+        .tab-button {
+            transition: all 0.2s ease-in-out;
+        }
+
+        .tab-button.active {
+            background-color: var(--color-primary);
+            color: var(--color-background);
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <div class="main-grid p-4">
+
+        <aside class="hidden lg:block lg:sticky lg:top-4 lg:self-start">
+            <div class="p-4">
+                <h1 class="text-3xl font-bold text-white">Astillero Digital</h1>
+                <p class="text-md mt-1 text-primary">Soluciones con rumbo</p>
+            </div>
+
+            <nav id="main-nav" class="mt-8">
+                <ul class="space-y-2">
+                    <li><a href="#puerto-base" class="nav-link active p-4 font-semibold"><i data-feather="anchor"></i>
+                            Puerto Base</a></li>
+                    <li><a href="#servicios" class="nav-link p-4 font-semibold"><i data-feather="compass"></i> Zonas de
+                            Navegación</a></li>
+                    <li><a href="#zona-evaluacion" class="nav-link p-4 font-semibold"><i data-feather="box"></i>
+                            Embarcaciones</a></li>
+                    <li><a href="#proceso" class="nav-link p-4 font-semibold"><i data-feather="git-branch"></i>
+                            Bitácoras de Desarrollo</a></li>
+                    <li><a href="#bitacora" class="nav-link p-4 font-semibold"><i data-feather="book-open"></i> Bitácora
+                            de Navegación</a></li>
+                    <li><a href="#colaboracion" class="nav-link p-4 font-semibold"><i data-feather="share-2"></i>
+                            Puertos Hermanos</a></li>
+                    <li><a href="#tripulacion" class="nav-link p-4 font-semibold"><i data-feather="users"></i> La
+                            Tripulación</a></li>
+                    <li><a href="#contacto" class="nav-link p-4 font-semibold"><i data-feather="mail"></i> Puerto de
+                            Contacto</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main id="content-container" class="content-area">
+
+            <section id="puerto-base" class="flex items-center justify-center text-center">
+                <div>
+                    <h2 class="text-4xl lg:text-6xl font-black mb-4 uppercase">Tu Brújula en el Océano Digital</h2>
+                    <p class="text-lg max-w-3xl font-semibold mx-auto text-text-muted">
+                        Transformamos ideas en soluciones digitales a través de un enfoque narrativo, técnico y
+                        artístico basado en una metáfora marina. Cada proyecto es una <b>travesía náutica</b>, y cada
+                        herramienta,una embarcación adecuada al entorno y propósito de navegación.
+                    </p>
+                    <p class="text-xl font-semibold text-secondary max-w-3xl mx-auto mt-10 leading-relaxed italic">
+                        "Cada solución nace en la calma o la tormenta, pero todas navegan hacia una misma orilla: el
+                        impacto digital."
+                    </p>
+                </div>
+            </section>
+
+            <section id="servicios" class="flex items-center justify-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-center mb-12"><i data-feather="compass"
+                            class="inline-block mr-2"></i>Zonas de Navegación: Servicios y Categorías</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-1 gap-4 mx-5">
+                        <div class="card">
+                            <h3 class="text-2xl font-bold text-primary mb-2">🌅 Lagunas </h3>
+                            <span class="text-cyan-400 text-md">(Web Estática, documentaciones)</span>
+                            <p class="text-text-muted">Aguas claras, ideales para soluciones rápidas y limpias.
+                            <ul class="list-disc list-outside ml-4 text-text-muted">
+                                <li>Sitios estáticos, portafolios, campañas visuales, documentación de proyectos.</li>
+                                <li>Rapidez, elegancia, bajo mantenimiento.</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3 class="text-2xl font-bold text-primary mb-2">🌊 Ríos y Rápidos</h3>
+                            <span class="text-cyan-400 text-md">(ConectaFlow & MicroApps)</span>
+                            <p class="text-text-muted">Corrientes dinámicas que facilitan el flujo operativo.
+                            <ul class="list-disc list-outside ml-4 text-text-muted my-auto">
+                                <li class="">Automatizaciones, scripts y conectores que aportan agilidad, eficiencia y
+                                    reducen errores operativos.</li>
+                                <li>Integraciones con APIs, microservicios y flujos de trabajo automatizados.</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3 class="text-2xl font-bold text-primary mb-2">🌌 Inmersiones Profundas</h3>
+                            <span class="text-cyan-400 text-md">(Análisis de Prototipos y Entornos)</span>
+                            <p class="text-text-muted">Ecosistemas submarinos donde se procesan y orquestan los datos
+                                que sustentan la superficie.
+                            <ul class="list-disc list-outside ml-4 text-text-muted">
+                                <li>Backend, APIs y bases de datos. Orquestamos los datos que sustentan la superficie
+                                    con lógica de negocio robusta.</li>
+                                <li>Desarrollo de aplicaciones backend, microservicios y sistemas de gestión de datos.
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3 class="text-2xl font-bold text-primary mb-2">🌐 Mar Abierto</h3>
+                            <span class="text-cyan-400 text-md">(Plataformas Web y E-commerce)</span>
+                            <p class="text-text-muted">Zonas amplias de navegación para experiencias extensas, comercio,
+                                contenido y despliegues robustos.
+                            <ul class="list-disc list-outside ml-4 text-text-muted">
+                                <li>Plataformas web, e-commerce y despliegues escalables. Soluciones completas para
+                                    experiencias de usuario extensas.</li>
+                                <li>Desarrollo de aplicaciones web, sistemas de gestión de contenido y comercio
+                                    electrónico.</li>
+                                <li>Generación de infraestructuras con contenedores, entornos de despliegue.</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="zona-evaluacion" class="flex items-center justify-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-center mb-12"><i data-feather="box"
+                            class="inline-block mr-2"></i>Embarcaciones Digitales</h2>
+                    <p class="text-center max-w-3xl mx-auto mb-10 text-text-muted">El objetivo no es solo desarrollar
+                        productos, sino crear una cultura de innovación estructurada, documentada y evolucionable, donde
+                        cada solución tiene un propósito, aplicación y una bitácora de desarrollo.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2  gap-6 text-left md:mx-56 mx-6">
+                        <div class="card">
+                            <h4 class="font-bold text-lg text-primary">🟦 Barco de papel</h4>
+                            <p class="text-md text-text-muted mt-1">Exploración ligera: prototipos visuales o scripts
+                                rápidos para validar ideas o tecnologías.</p>
+                            <ul class="text-sm text-text-muted mt-2 list-disc list-outside ml-4">
+                                <li><span class="font-semibold">Propósito:</span> Validar una idea o tecnología
+                                    rápidamente</li>
+                                <li><span class="font-semibold">Aplicación:</span> Prototipos visuales, scripts rápidos
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h4 class="font-bold text-lg text-primary">🟩 Velero Interactivo</h4>
+                            <p class="text-md text-text-muted mt-1">Navegación estética: experiencias visuales
+                                atractivas en sitios estáticos.</p>
+                            <ul class="text-sm text-text-muted mt-2 list-disc list-outside ml-4">
+                                <li><span class="font-semibold">Propósito:</span> Crear experiencias visuales atractivas
+                                </li>
+                                <li><span class="font-semibold">Aplicación:</span> Web de portada con animación y diseño
+                                    sensible</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h4 class="font-bold text-lg text-primary">🟥 Submarino Modular</h4>
+                            <p class="text-md text-text-muted mt-1">Navegación técnica profunda: herramientas con lógica
+                                de negocio escalable.</p>
+                            <ul class="text-sm text-text-muted mt-2 list-disc list-outside ml-4">
+                                <li><span class="font-semibold">Propósito:</span> Desarrollar herramientas escalables
+                                </li>
+                                <li><span class="font-semibold">Aplicación:</span> Aplicaciones funcionales, MVPs
+                                    backend</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h4 class="font-bold text-lg text-primary">⬛ Submarino de Datos</h4>
+                            <p class="text-md text-text-muted mt-1">Exploración estructural: procesamiento, análisis o
+                                integración de datos complejos.</p>
+                            <ul class="text-sm text-text-muted mt-2 list-disc list-outside ml-4">
+                                <li><span class="font-semibold">Propósito:</span> Procesar, analizar o integrar datos
+                                    complejos</li>
+                                <li><span class="font-semibold">Aplicación:</span> Dashboards, integraciones, análisis
+                                    automatizados</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h4 class="font-bold text-lg text-primary">🟨 Dron Autónomo</h4>
+                            <p class="text-md text-text-muted mt-1">Misiones automatizadas: soluciones autoejecutables
+                                con mínima intervención humana.</p>
+                            <ul class="text-sm text-text-muted mt-2 list-disc list-outside ml-4">
+                                <li><span class="font-semibold">Propósito:</span> Soluciones autoejecutables</li>
+                                <li><span class="font-semibold">Aplicación:</span> Bots, tareas programadas, Webhooks,
+                                    Microapps, scripts, conectores</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h4 class="font-bold text-lg text-primary">🟪 Trasatlántico</h4>
+                            <p class="text-md text-text-muted mt-1">Producto evolucionado: proyecto listo para entornos
+                                reales, escalable y documentado.</p>
+                            <ul class="text-sm text-text-muted mt-2 list-disc list-outside ml-4">
+                                <li><span class="font-semibold">Propósito:</span> Proyecto listo para producción</li>
+                                <li><span class="font-semibold">Aplicación:</span> Microservicios, plataformas
+                                    completas, soluciones de cliente final</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="proceso" class="flex items-center justify-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-center mb-4"><i data-feather="git-branch"
+                            class="inline-block mr-2"></i>Bitácoras de Desarrollo</h2>
+                    <p class="text-center max-w-3xl mx-auto mb-10 text-text-muted">Nuestro proceso, articulado en fases
+                        náuticas, garantiza calidad desde la concepción hasta el despliegue.</p>
+
+                    <div id="process-tabs" class="flex justify-center gap-2 mb-8 flex-wrap">
+                        <button data-target="lagunas"
+                            class="tab-button active bg-primary text-background font-bold py-2 px-4 rounded-full">Lagunas</button>
+                        <button data-target="rios"
+                            class="tab-button bg-surface text-primary font-bold py-2 px-4 rounded-full">Ríos y
+                            Rápidos</button>
+                        <button data-target="inmersiones"
+                            class="tab-button bg-surface text-primary font-bold py-2 px-4 rounded-full">Inmersiones</button>
+                        <button data-target="mar-abierto"
+                            class="tab-button bg-surface text-primary font-bold py-2 px-4 rounded-full">Mar
+                            Abierto</button>
+                    </div>
+
+                    <div id="process-content"
+                        class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:h-full before:w-0.5 before:bg-white/10 before:self-start">
+                        <!-- Contenido de Lagunas -->
+                        <div id="lagunas" class="tab-content flex flex-col gap-6">
+                            <article class="relative pl-10">
+                                <div
+                                    class="absolute -left-1.5 top-1 h-5 w-5 rounded-full bg-secondary border-4 border-surface">
+                                </div>
+                                <h4 class="font-bold text-xl text-primary">Fase 1: Carta Náutica Visual (8-12h / 1-2
+                                    días)</h4>
+                                <ul class="list-disc list-inside text-text-muted mt-2">
+                                    <li>Definición de objetivos y alcance del sitio.</li>
+                                    <li>Colecta y organización de información de contenido.</li>
+                                    <li>Boceto rápido de navegación y wireframes iniciales.</li>
+                                    <li>Selección de estilo gráfico y paleta de colores.</li>
+                                </ul>
+                                </p>
+                            </article>
+                            <article class="relative pl-10">
+                                <div
+                                    class="absolute -left-1.5 top-1 h-5 w-5 rounded-full bg-secondary border-4 border-surface">
+                                </div>
+                                <h4 class="font-bold text-xl text-primary">Fase 2: Construcción del Espigón (16-24h /
+                                    2-3 días)</h4>
+                                <ul class="list-disc list-inside text-text-muted mt-2">
+                                    <li>Maquetado en HTML/CSS y estructura base.</li>
+                                    <li>Implementación de animaciones ligeras y microinteracciones.</li>
+                                    <li>Integración de contenido inicial y recursos multimedia.</li>
+                                    <li>Primer despliegue en entorno de pruebas.</li>
+                                </ul>
+                            </article>
+                            <article class="relative pl-10">
+                                <div
+                                    class="absolute -left-1.5 top-1 h-5 w-5 rounded-full bg-secondary border-4 border-surface">
+                                </div>
+                                <h4 class="font-bold text-xl text-primary">Fase 3: Pulido de Superficie (8-12h / 1-2
+                                    días)</h4>
+                                <ul class="list-disc list-inside text-text-muted mt-2">
+                                    <li>Refinamiento visual y ajustes de diseño.</li>
+                                    <li>Validación responsive en múltiples dispositivos.</li>
+                                    <li>Optimización de accesibilidad y SEO básico.</li>
+                                    <li>Redacción y revisión de documentación técnica y de usuario.</li>
+                                </ul>
+                            </article>
+                            <article class="relative pl-10">
+                                <div
+                                    class="absolute -left-1.5 top-1 h-5 w-5 rounded-full bg-secondary border-4 border-surface">
+                                </div>
+                                <h4 class="font-bold text-xl text-primary">Fase 4: Fondeo Final (8-10h / 1 día)</h4>
+                                <ul class="list-disc list-inside text-text-muted mt-2">
+                                    <li>QA exhaustivo: pruebas funcionales, de rendimiento y compatibilidad.</li>
+                                    <li>Optimización de carga y recursos.</li>
+                                    <li>Implementación de backups y monitoreo básico.</li>
+                                    <li>Publicación oficial y retroalimentación inicial.</li>
+                                </ul>
+                            </article>
+                        </div>
+                        <!-- Contenido de Ríos y Rápidos -->
+                        <div id="rios" class="tab-content flex flex-col gap-6 hidden">
+                            <article class="relative pl-10">
+                                <div
+                                    class="absolute -left-1.5 top-1 h-5 w-5 rounded-full bg-secondary border-4 border-surface">
+                                </div>
+                                <h4 class="font-bold text-xl text-primary">Fase 1: Nacimiento del Manantial (6-8h / 1
+                                    día)</h4>
+                                <ul class="list-disc list-inside text-text-muted mt-2">
+                                    <li>Identificación detallada del flujo o proceso a automatizar.</li>
+                                    <li>Mapeo de actores, sistemas y herramientas implicadas.</li>
+                                    <li>Definición de objetivos, métricas de éxito y posibles riesgos.</li>
+                                    <li>Boceto del diagrama de flujo inicial.</li>
+                                </ul>
+                            </article>
+                            <article class="relative pl-10">
+                                <div
+                                    class="absolute -left-1.5 top-1 h-5 w-5 rounded-full bg-secondary border-4 border-surface">
+                                </div>
+                                <h4 class="font-bold text-xl text-primary">Fase 2: Trazado del Canal (10-14h / 1-2 días)
+                                </h4>
+                                <ul class="list-disc list-inside text-text-muted mt-2">
+                                    <li>Diseño técnico de la solución: arquitectura, endpoints, triggers y dependencias.
+                                    </li>
+                                    <li>Desarrollo del script, MicroApp o conector principal.</li>
+                                    <li>Implementación de pruebas unitarias y validaciones básicas.</li>
+                                    <li>Documentación preliminar del proceso y configuración.</li>
+                                </ul>
+                            </article>
+                            <article class="relative pl-10">
+                                <div
+                                    class="absolute -left-1.5 top-1 h-5 w-5 rounded-full bg-secondary border-4 border-surface">
+                                </div>
+                                <h4 class="font-bold text-xl text-primary">Fase 3: Flujo en Movimiento (8-12h / 1-2
+                                    días)</h4>
+                                <ul class="list-disc list-inside text-text-muted mt-2">
+                                    <li>Integración con sistemas externos, APIs o servicios relacionados.</li>
+                                    <li>Validación de entrada/salida de datos y manejo de errores.</li>
+                                    <li>Pruebas funcionales en escenarios reales y simulados.</li>
+                                    <li>Ajustes iterativos según retroalimentación y resultados.</li>
+                                </ul>
+                            </article>
+                            <article class="relative pl-10">
+                                <div
+                                    class="absolute -left-1.5 top-1 h-5 w-5 rounded-full bg-secondary border-4 border-surface">
+                                </div>
+                                <h4 class="font-bold text-xl text-primary">Fase 4: Afluente en Producción (6-8h / 1 día)
+                                </h4>
+                                <ul class="list-disc list-inside text-text-muted mt-2">
+                                    <li>Despliegue controlado en entorno productivo.</li>
+                                    <li>Configuración de monitoreo, alertas y logs.</li>
+                                    <li>Capacitación breve a usuarios o responsables.</li>
+                                    <li>Recopilación de métricas iniciales y retroalimentación para mejoras futuras.
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                        <!-- Contenido de Inmersiones -->
+                        <div id="inmersiones" class="tab-content flex flex-col gap-6 hidden">
+                            <div class="relative pl-10">
+                                <div
+                                    class="absolute -left-1.5 top-1 h-5 w-5 rounded-full bg-secondary border-4 border-surface">
+                                </div>
+                                <h4 class="font-bold text-xl text-primary">Fase 1: Sondeo Submarino y Cartografía de
+                                    Datos (12-16h / 2 días)</h4>
+                                <ul class="list-disc list-inside text-text-muted mt-2">
+                                    <li>Análisis de datos existentes y fuentes externas.</li>
+                                    <li>Diseño de arquitectura de datos y definición de esquemas.</li>
+                                    <li>Identificación de requerimientos de integración y seguridad.</li>
+                                    <li>Planificación de flujos de datos y dependencias técnicas.</li>
+                                </ul>
+                            </div>
+                            <div class="relative pl-10">
+                                <div
+                                    class="absolute -left-1.5 top-1 h-5 w-5 rounded-full bg-secondary border-4 border-surface">
+                                </div>
+                                <h4 class="font-bold text-xl text-primary">Fase 2: Montaje del Módulo Central y
+                                    Fundaciones Backend (18-24h / 3 días)</h4>
+                                <ul class="list-disc list-inside text-text-muted mt-2">
+                                    <li>Implementación de la lógica principal del backend: endpoints, controladores y
+                                        servicios.</li>
+                                    <li>Configuración y despliegue de la base de datos inicial, migraciones y seeds.
+                                    </li>
+                                    <li>Desarrollo de autenticación, autorización y manejo de errores básicos.</li>
+                                    <li>Pruebas unitarias de los módulos principales.</li>
+                                </ul>
+                            </div>
+                            <div class="relative pl-10">
+                                <div
+                                    class="absolute -left-1.5 top-1 h-5 w-5 rounded-full bg-secondary border-4 border-surface">
+                                </div>
+                                <h4 class="font-bold text-xl text-primary">Fase 3: Acoplamiento de Sensores y Expansión
+                                    de Integraciones (14-18h / 2-3 días)</h4>
+                                <ul class="list-disc list-inside text-text-muted mt-2">
+                                    <li>Integración de APIs externas, servicios de terceros y módulos internos.</li>
+                                    <li>Desarrollo de estructuras relacionales avanzadas y validaciones de datos.</li>
+                                    <li>Implementación de procesos de ingestión, transformación y almacenamiento de
+                                        datos.</li>
+                                    <li>Pruebas funcionales y validación de integridad de datos.</li>
+                                </ul>
+                            </div>
+                            <div class="relative pl-10">
+                                <div
+                                    class="absolute -left-1.5 top-1 h-5 w-5 rounded-full bg-secondary border-4 border-surface">
+                                </div>
+                                <h4 class="font-bold text-xl text-primary">Fase 4: Simulación de Presión y Optimización
+                                    Abisal (10-14h / 1-2 días)</h4>
+                                <ul class="list-disc list-inside text-text-muted mt-2">
+                                    <li>Ejecución de pruebas de carga, estrés y consistencia en entornos simulados y
+                                        reales.</li>
+                                    <li>Optimización de consultas, índices y recursos para alto rendimiento.</li>
+                                    <li>Documentación técnica exhaustiva: diagramas, manuales de endpoints y flujos de
+                                        datos.</li>
+                                    <li>Revisión de seguridad, backup y monitoreo básico para despliegue inicial.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Contenido de Mar Abierto -->
+                        <div id="mar-abierto" class="tab-content flex flex-col gap-6 hidden">
+                            <div class="relative pl-10">
+                                <div
+                                    class="absolute -left-1.5 top-1 h-5 w-5 rounded-full bg-secondary border-4 border-surface">
+                                </div>
+                                <h4 class="font-bold text-xl text-primary">Fase 1: Rutas Comerciales y Cartografía
+                                    (16-24h / 2-3 días)</h4>
+                                <ul class="list-disc list-inside text-text-muted mt-2">
+                                    <li>Investigación y definición de perfiles de usuario y casos de uso principales.
+                                    </li>
+                                    <li>Diseño detallado de la experiencia de usuario (UX) y arquitectura de la
+                                        información.</li>
+                                    <li>Creación de wireframes y prototipos navegables.</li>
+                                    <li>Planificación del catálogo de contenidos, funcionalidades clave y flujos de
+                                        navegación.</li>
+                                    <li>Selección de tecnologías y herramientas para frontend, backend y gestión de
+                                        contenido.</li>
+                                </ul>
+                            </div>
+                            <div class="relative pl-10">
+                                <div
+                                    class="absolute -left-1.5 top-1 h-5 w-5 rounded-full bg-secondary border-4 border-surface">
+                                </div>
+                                <h4 class="font-bold text-xl text-primary">Fase 2: Arqueo de Contenedores (14-20h / 2-3
+                                    días)</h4>
+                                <ul class="list-disc list-inside text-text-muted mt-2">
+                                    <li>Configuración de entornos de desarrollo, pruebas y producción.</li>
+                                    <li>Definición y despliegue de infraestructura: contenedores (Docker), dominios,
+                                        certificados SSL y servicios de hosting.</li>
+                                    <li>Implementación de pipelines de integración y despliegue continuo (CI/CD).</li>
+                                    <li>Configuración de bases de datos, almacenamiento y servicios externos.</li>
+                                    <li>Establecimiento de políticas de seguridad, backups y recuperación ante
+                                        desastres.</li>
+                                </ul>
+                            </div>
+                            <div class="relative pl-10">
+                                <div
+                                    class="absolute -left-1.5 top-1 h-5 w-5 rounded-full bg-secondary border-4 border-surface">
+                                </div>
+                                <h4 class="font-bold text-xl text-primary">Fase 3: Oleaje de Contenido (18-24h / 2-3
+                                    días)</h4>
+                                <ul class="list-disc list-inside text-text-muted mt-2">
+                                    <li>Integración y personalización de sistemas de gestión de contenido (CMS) y
+                                        módulos adicionales.</li>
+                                    <li>Migración y despliegue de contenido inicial, incluyendo multimedia y recursos
+                                        interactivos.</li>
+                                    <li>Desarrollo e integración de funcionalidades avanzadas: buscadores, formularios,
+                                        pasarelas de pago, etc.</li>
+                                    <li>Pruebas funcionales, de usabilidad y accesibilidad en diferentes dispositivos y
+                                        navegadores.</li>
+                                    <li>Optimización de rendimiento, SEO y tiempos de carga.</li>
+                                </ul>
+                            </div>
+                            <div class="relative pl-10">
+                                <div
+                                    class="absolute -left-1.5 top-1 h-5 w-5 rounded-full bg-secondary border-4 border-surface">
+                                </div>
+                                <h4 class="font-bold text-xl text-primary">Fase 4: Navegación Continua (10-14h / 1-2
+                                    días)</h4>
+                                <ul class="list-disc list-inside text-text-muted mt-2">
+                                    <li>Monitorización activa de la plataforma: rendimiento, logs y alertas.</li>
+                                    <li>Implementación de sistemas de escalabilidad automática y balanceo de carga.</li>
+                                    <li>Ejecución de backups regulares y validación de planes de recuperación.</li>
+                                    <li>Estrategia de crecimiento: análisis de métricas, retroalimentación de usuarios y
+                                        roadmap de mejoras.</li>
+                                    <li>Capacitación a usuarios administradores y entrega de documentación técnica y de
+                                        usuario final.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="bitacora" class="flex items-center justify-center text-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6"><i data-feather="book-open"
+                            class="inline-block mr-2"></i>Bitácora de Navegación</h2>
+                    <p class="text-lg max-w-3xl mx-auto text-text-muted">
+                        Registro de avances, aprendizajes y descubrimientos. Artículos técnicos sobre diseño,
+                        automatización y reflexiones de procesos.
+                    </p>
+                    <div class="mt-10">
+                        <a href="#"
+                            class="bg-secondary text-background px-8 py-4 rounded-full shadow-lg font-bold hover:bg-white transition-all duration-300 transform hover:scale-105">Explorar
+                            Bitácora</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="colaboracion" class="flex items-center justify-center text-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6"><i data-feather="share-2"
+                            class="inline-block mr-2"></i>Navegación Colaborativa</h2>
+                    <p class="text-lg max-w-3xl mx-auto text-text-muted">
+                        Fomentamos "Puertos Hermanos" e "Islas Colaborativas": espacios para contribuir con ideas,
+                        plantillas o integraciones, creando un ecosistema en expansión.
+                    </p>
+                    <div class="mt-10">
+                        <a href="mailto:contacto@astillerodigital.com"
+                            class="bg-primary text-background px-8 py-4 rounded-full shadow-lg font-bold hover:bg-white transition-all duration-300 transform hover:scale-105">Contacta
+                            con la tripulación</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tripulacion" class="flex items-center justify-center text-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6"><i data-feather="users" class="inline-block mr-2"></i>La
+                        Tripulación</h2>
+                    <p class="text-lg max-w-3xl mx-auto text-text-muted">
+                        Conoce al equipo detrás de Astillero Digital: fundador, diseñadores, desarrolladores y gestores,
+                        unidos por la pasión marina.
+                    </p>
+                    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-6 md:mx-56">
+                        <div class="card">
+                            <h3 class="text-xl font-bold text-primary">Capitán</h3>
+                            <p class="text-text-muted">Líder estratégico y visionario.</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="text-xl font-bold text-primary">Navegante UX/UI</h3>
+                            <p class="text-text-muted">Diseñador de experiencias intuitivas.</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="text-xl font-bold text-primary">Desarrollador Backend</h3>
+                            <p class="text-text-muted">Arquitecto de datos y lógica de negocios.</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="text-xl font-bold text-primary">Desarrollador Frontend</h3>
+                            <p class="text-text-muted">Constructor de interfaces responsivas.</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="text-xl font-bold text-primary">Especialista SEO</h3>
+                            <p class="text-text-muted">Optimización para visibilidad orgánica.</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="text-xl font-bold text-primary">Gestor de Proyectos</h3>
+                            <p class="text-text-muted">Coordinación de tareas y comunicación.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacto" class="flex items-center justify-center text-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6"><i data-feather="mail" class="inline-block mr-2"></i>Puerto de
+                        Contacto</h2>
+                    <p class="text-lg max-w-3xl mx-auto text-text-muted">
+                        Estamos listos para zarpar contigo. Envía tu consulta o propuesta y te responderemos de
+                        inmediato.
+                    </p>
+                    <div class="mt-10">
+                        <a href="mailto:contacto@astillerodigital.com"
+                            class="bg-primary text-background px-8 py-4 rounded-full shadow-lg font-bold hover:bg-white transition-all duration-300 transform hover:scale-105">Contacta
+                            con Nosotros</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center text-sm text-text-muted lg:col-span-2 py-4">
+            <p>Astillero Digital &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Feather Icons
+            feather.replace();
+
+            // Active Nav Link on Scroll
+            const navLinks = document.querySelectorAll('#main-nav a');
+            const sections = document.querySelectorAll('#content-container > section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                            link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+                        });
+                    }
+                });
+            }, {rootMargin: "-50% 0px -50% 0px"});
+            sections.forEach(section => observer.observe(section));
+
+            // Process Tabs
+            const tabButtons = document.querySelectorAll('#process-tabs .tab-button');
+            const tabContents = document.querySelectorAll('#process-content .tab-content');
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetId = button.dataset.target;
+
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.classList.add('bg-surface', 'text-primary');
+                    });
+                    button.classList.add('active');
+                    button.classList.remove('bg-surface', 'text-primary');
+
+                    tabContents.forEach(content => {
+                        if (content.id === targetId) {
+                            content.classList.remove('hidden');
+                        } else {
+                            content.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+        });
+
+        // Tailwind Config
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: 'var(--color-background)',
+                        surface: 'var(--color-surface)',
+                        primary: 'var(--color-primary)',
+                        secondary: 'var(--color-secondary)',
+                        text: 'var(--color-text)',
+                        'text-muted': 'var(--color-text-muted)',
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
