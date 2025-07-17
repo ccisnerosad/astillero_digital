@@ -1,0 +1,26 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+@theme {
+  --color-background: #020617;
+  --color-surface: #0f172a;
+  --color-primary: #38bdf8;
+  --color-secondary: #eab308;
+  --color-text: #e2e8f0;
+  --color-text-muted: #94a3b8;
+  --font-oxygen: Oxygen, sans-serif;
+  --gradient-animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  background: linear-gradient(to right, var(--color-background), var(--color-surface));
+  color: var(--color-text);
+  font-family: var(--font-oxygen);
+  animation: var(--gradient-animation);
+}
