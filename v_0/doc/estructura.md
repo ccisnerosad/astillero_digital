@@ -5,11 +5,8 @@
 ### Un ecosistema creativo para soluciones digitales inspiradas en el mar
 
 ---
-
 # 🌊 **Estrategia General y Mapa Náutico del Astillero Digital**
 
-### Un ecosistema creativo para soluciones digitales inspiradas en el mar
-****
 ## I. 🌐 Visión General
 
 **Astillero Digital** es una marca que transforma ideas en soluciones digitales a través de un enfoque narrativo, técnico y artístico basado en una metáfora marina. Cada proyecto se concibe como una *travesía náutica*, y cada herramienta es una embarcación adecuada al entorno y propósito de navegación.
@@ -20,69 +17,76 @@ El objetivo no es solo desarrollar productos, sino crear una cultura de innovaci
 
 ## II. 🧭 Clasificación Semántica de Prototipos y Embarcaciones
 
-| **Nombre**             | **Tipo de Navegación**      | **Propósito**                                                | **Aplicación**                                                     |
-| ---------------------- | --------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------ |
-| **Barco de papel**     | Exploración ligera          | Validar una idea o tecnología rápidamente                    | Prototipos visuales o scripts rápidos                              |
-| **Velero Interactivo** | Navegación estética         | Crear experiencias visuales atractivas en sitios estáticos   | Web de portada con animación y diseño sensible                     |
-| **Submarino Modular**  | Navegación técnica profunda | Desarrollar herramientas con lógica de negocio escalable     | Aplicaciones funcionales, MVPs backend                             |
-| **Submarino de Datos** | Exploración estructural     | Procesar, analizar o integrar estructuras complejas de datos | Dashboards, integraciones, análisis automatizados                  |
-| **Dron Autónomo**      | Misiones automatizadas      | Soluciones autoejecutables con mínima intervención humana    | Bots, tareas programadas, Webhooks, Microapps, scripts, conectores |
-| **Trasatlántico**      | Producto evolucionado       | Proyecto listo para entornos reales, escalable y documentado | Microservicios, plataformas completas, soluciones de cliente final |
+| **Nombre**             | Propósito Técnico                                           | Aplicación Específica                                                 |
+|-------------------------|--------------------------------------------------------------|------------------------------------------------------------------------|
+| **Barco de Papel**      | Validación ligera y rápida de ideas o scripts               | Prototipos visuales, experimentos, pruebas rápidas                    |
+| **Velero Interactivo**  | Navegación estética y presentación visual                   | Landing pages, portfolios, sitios promocionales con animación         |
+| **Catamarán Power Cats**      | Web dinámica ligera con interactividad básica               | Sitios generados con Astro, Hugo o similares, híbridos estático/dinámico |
+| **Submarino Modular**   | Navegación técnica con lógica de negocio reutilizable       | Aplicaciones funcionales, MVPs, herramientas backend con UI básica    |
+| **Submarino de Datos**  | Exploración de estructuras de datos complejas               | Dashboards, integración de APIs, ETL, análisis estructurado de datos  |
+| **Dron Autónomo**       | Automatización y ejecución autónoma                         | Bots, microapps, tareas programadas, scripts desatendidos             |
+| **Trasatlántico**       | Plataforma completa y escalable                             | Soluciones finales, microservicios, e-commerce, apps robustas         |
 
-Cada uno puede tener su propia bitácora, demo vivo, documentación técnica y análisis de impacto.
-
----
-
-## III. ⚓ Zonas de Navegación: Servicios y Categorías
-
-### 🏠 **Puerto Base**
-
-Punto de entrada y anclaje. Muestra la propuesta de valor, visión general y ruta de exploración digital.
-
-* Introducción a la marca y servicios.
-* CTA: “Explora el Astillero”, “Visita las Corrientes”.
-* Iconografía: Faro, muelle, brújula.
+Cada uno debe tener su propia bitácora, demo vivo, documentación técnica y análisis de impacto.
 
 ---
 
-### 🌅 **Lagunas** (Web Estática, documentaciones)
+## III. ⚓ Zonas de Navegación: Categorías de Entorno y Servicios
 
-Aguas claras, ideales para soluciones rápidas y limpias.
+Visualiza el Astillero Digital como un mapa oceánico, donde cada zona representa un entorno de desarrollo y servicio, con iconografía y descripciones claras:
 
-* Sitios estáticos, portafolios, campañas visuales, documentación de proyectos.
-* Rapidez, elegancia, bajo mantenimiento.
-
----
-
-### 🌊 **Ríos y Rápidos** (ConectaFlow & MicroApps)
-
-Corrientes dinámicas que facilitan el flujo operativo.
-
-* Automatizaciones, scripts, conectores.
-* Agilidad, eficiencia, reducción de errores.
-
----
-
-### 🌌 **Inmersiones Profundas** (Backend & Procesamiento de Datos)
-
-Ecosistemas submarinos donde se procesan y orquestan los datos que sustentan la superficie.
-
-* Herramientas backend, lógica empresarial.
-* APIs, estructuras de bases de datos, orquestadores.
-* Procesamiento de datos, sistemas de integración técnica.
+| 🌟 **Zona**                   | 📝 **Propósito**                                         | 🧩 **Características Clave**                                         | 🖼️ **Iconografía / Metáfora**           |
+|-------------------------------|---------------------------------------------------------|---------------------------------------------------------------------|------------------------------------------|
+| **🏠 Puerto Base**            | Punto de entrada y anclaje de la marca                  | Presentación, visión, CTA, ruta general del sitio                   | Faro, muelle, brújula                    |
+| **🌅 Lagunas**                | Navegación superficial, rápida y elegante               | Web estática, documentación, portafolios, bajo mantenimiento        | Agua clara, islas, barcas                |
+| **🌊 Ríos y Rápidos**         | Flujo operativo y eficiencia técnica                    | Automatizaciones, microapps, scripts ligeros                        | Corrientes, rápidos, canales             |
+| **🌌 Inmersiones Profundas**  | Lógica compleja, backend, procesamiento de datos        | APIs, dashboards, orquestadores, análisis estructurado              | Submarinos, capas abisales               |
+| **🌊 Mar Abierto**            | Navegación extensiva y orientada al usuario final       | Plataformas CMS, tiendas online, soluciones escalables              | Trasatlánticos, rutas comerciales         |
+| **🧪 Zona de Evaluación Marina** | Validación de prototipos y QA en entorno controlado   | Pruebas, documentación de impacto, retroalimentación                | Laboratorio submarino, bitácora           |
+| **🏝️ Islas Flotantes**        | Exploración creativa y visual                           | Juegos interactivos, arte digital, experimentación narrativa         | Islas, globos, arte flotante              |
+| **🌩️ Tormentas Tecnológicas** | Investigación y prueba de tecnologías emergentes         | IA, Web3, XR, herramientas beta o I+D                               | Nubes, rayos, radar, laboratorio móvil    |
 
 ---
 
-### 🌊 **Mar Abierto** (Plataformas Web y Estructuras Compuestas)
+### 🗺️ **Mapa Visual de Zonas**
 
-Zonas amplias de navegación para experiencias extensas, comercio, contenido y despliegues robustos.
+```
 
-* Blogs, tiendas virtuales, páginas de servicios.
-* Sistemas de gestión de contenido (CMS), estructuras SEO.
-* Generación de infraestructuras con contenedores, entornos de despliegue.
-* Hosting de soluciones escalables orientadas a usuario final.
+🏠 Puerto Base
+   ├── 🌅 Lagunas ──> 🌊 Ríos y Rápidos
+   │
+   └─> 🌊 Mar Abierto
+   |
+   └─> 🌌 Inmersiones Profundas    
+   │
+   └─> 🧪 Zona de Evaluación Marina
+   |
+   └─> 🏝️ Islas Flotantes
+   │
+   └─> 🌩️ Tormentas Tecnológicas
+```
 
----****
+- Cada zona conecta con otras según el tipo de proyecto y nivel de inmersión.
+- Iconos y metáforas refuerzan la navegación sensorial y temática marina.
+- Las zonas especiales (Islas Flotantes, Tormentas Tecnológicas) invitan a la creatividad y experimentación.
+
+---
+
+> **Explora cada zona como una travesía: desde la calma de las lagunas hasta la innovación de las tormentas tecnológicas. Elige tu embarcación y navega hacia nuevas soluciones digitales.**
+
+### ⚓ Relación Navíos ↔ Zonas
+
+| Navío                  | Compatible con Zonas                                          |
+|------------------------|---------------------------------------------------------------|
+| **Barco de Papel**      | Lagunas, Ríos, Islas Flotantes                                |
+| **Velero Interactivo**  | Lagunas, Mar Abierto, Islas Flotantes                         |
+| **Catamarán Power Cats**      | Ríos, Lagunas, Mar Abierto                                    |
+| **Submarino Modular**   | Inmersiones Profundas, Mar Abierto, Evaluación Marina         |
+| **Submarino de Datos**  | Inmersiones Profundas, Evaluación Marina                      |
+| **Dron Autónomo**       | Ríos, Inmersiones Profundas, Tormentas Tecnológicas           |
+| **Trasatlántico**       | Mar Abierto, Inmersiones Profundas, Evaluación Marina         |
+
+---
 
 ### 🧪 **Zona de Evaluación Marina** (Análisis de Prototipos y Entornos)
 
@@ -91,17 +95,7 @@ Espacio donde se construyen, prueban y lanzan los prototipos.
 * Cada solución es una embarcación con su propia categoría.
 * Documentación técnica, propósito, demo y CTA de colaboración.
 
-Subcategorías:
 
-| Nivel                    | Prototipo |
-| ------------------------ | --------- |
-| 🟦 Barco de papel        |           |
-| 🟩 Velero Interactivo    |           |
-| 🟧 Río de Automatización |           |
-| 🟥 Submarino Modular     |           |
-| ⬛ Submarino de Datos     |           |
-| 🟨 Dron Autónomo         |           |
-| 🟪 Trasatlántico         |           |
 
 ---
 
@@ -133,14 +127,14 @@ Punto de anclaje con el mundo exterior.
 
 Una interfaz visual en forma de *mapa de exploración oceánica*, donde los visitantes navegan de forma sensorial y estructurada por las zonas y embarcaciones.
 
-### 🔸 Estructura Visual Sugerida:
+### 🔸 Estructura Visual Sugerida
 
 * **Superficie (Puerto Base)**: Entrada del sitio. Faro, nubes, banderas.
 * **Zonas flotantes** (Lagunas, Ríos, Puerto, Bitácora): visibles sobre el nivel del mar.
 * **Profundidades (Submarino Modular, Submarino de Datos)**: representadas en capas abisales.
 * **Zonas de tránsito** (Dron Autónomo, Marea Alfa): navegación satelital y seguimiento de misión.
 
-### 🔹 Elementos Clave:
+### 🔹 Elementos Clave
 
 * **Hover interactivo**: Muestra descripción y CTA.
 * **Niveles de profundidad**: Anima el desplazamiento según la categoría (de superficie a abismo).
