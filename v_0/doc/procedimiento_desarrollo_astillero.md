@@ -22,7 +22,53 @@ Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructura
 
 **Salidas:**
 
-- Requisitos definidos, alcance preliminar, posibles riesgos, perfil de usuarios, objetivos del proyecto.
+- Boceto Manifiesto del Proyecto:
+  Este documento recopila y organiza las ideas y requerimientos discutidos en la reunión inicial con el cliente.
+
+  1. **Visión General y Objetivos**
+
+     - **Concepto del Proyecto:** (Idea central que el cliente transmitió).
+     - **Objetivos Principales:**
+       - (Lista de los objetivos medibles que se mencionaron, ej: "llegar a X usuarios en el primer año", "reducir el tiempo del proceso Y en un 50%").
+       - (Añadir cualquier otro objetivo clave).
+
+  2. **Alcance y Usuarios**
+
+     - **Alcance Preliminar:** (Descripción de lo que el cliente imagina que hará el producto).
+     - **Perfil de Usuarios:** (Descripción del tipo de persona que el cliente cree que usará el sistema).
+     - **Casos de Uso:** (Ejemplos concretos de cómo esos usuarios interactuarán con el producto, según lo conversado).
+
+  3. **Metáfora y Naturaleza del Proyecto**
+
+     - **Zona de Navegación (Contexto de Operación):**
+       - (Indicar la opción discutida: Laguna, Río, Mar Abierto, etc., y qué significa para el proyecto. Ej: "Mar Abierto, indicando un mercado competitivo y con grandes oportunidades").
+     - **Tipo de Embarcación (Naturaleza del Producto):**
+       - (Indicar la opción discutida: Barco de papel, Velero Interactivo, Submarino, etc., y qué implica. Ej: "Velero Interactivo, sugiriendo un producto ágil, que se adapta a las condiciones y requiere la participación del usuario").
+
+  4. **Características y Requerimientos**
+
+     - **Características Clave:** (Listado de las funcionalidades más importantes que el cliente solicitó).
+     - **Requerimientos No Funcionales:** (Aspectos como velocidad, seguridad, diseño, etc., que el cliente haya mencionado, aunque no los llamara así. Ej: "el cliente mencionó que debe ser 'muy rápido' y 'verse profesional'").
+     - **Flujos y Automatización:**
+       - **Procesos a Automatizar:** (Listar los procesos manuales que el cliente quiere que el nuevo sistema resuelva).
+       - **Flujos de Datos:** (Describir cómo el cliente imagina que la información se moverá dentro del sistema).
+
+  5. **Plan de Entrega Evolutivo**
+
+     - **Desglose Modular de Funcionalidades:**
+       - **Fase 1: Producto Mínimo Viable (MVP - La primera travesía)**
+         - **Objetivo:** (El propósito central de la primera versión entregable).
+         - **Funcionalidades Esenciales:** (El listado de funciones mínimas para que el producto sea útil desde el inicio).
+       - **Fase 2: Expansión (Futuras Travesías)**
+         - **Objetivo:** (Lo que se busca lograr después del lanzamiento inicial).
+         - **Funcionalidades de Expansión:** (Las ideas y características que el cliente visualiza para el futuro del producto).
+
+  6. **Puntos a Considerar**
+
+     - **Posibles Riesgos Identificados:** (Listar las preocupaciones o posibles problemas que el cliente mencionó durante la conversación).
+     - **Bitácora de Navegación Inicial (Próximos Pasos):** (Anotar las acciones inmediatas o tareas que surgieron de la reunión, como "investigar la tecnología X" o "agendar una siguiente reunión para revisar el prototipo").
+     - **Referencias Visuales:** (Cualquier imagen, enlace o documento que el cliente compartió como inspiración).
+     - **Indicadores de Éxito:** (Definir cómo se medirá el éxito del proyecto, incluyendo métricas y objetivos específicos).
 
 ---
 
@@ -44,7 +90,7 @@ Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructura
 
 **Salidas:**
 
-- Categoría de navegación definida, tipo de embarcación asignado, nota de planificación inicial.
+- Definición de la categoría de navegación, tipo de embarcación asignado, y justificación de la elección.
 
 ---
 
@@ -66,11 +112,34 @@ Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructura
 
 **Salidas:**
 
-- Wireframes, flujos de usuario, prototipo funcional, interacciones clave.
+- Wireframes, flujos de usuario, prototipo funcional, interacciones clave, actualización al manifiesto del proyecto.
 
 ---
 
-### 4. Boceto técnico
+### 4. Interacción con el cliente (punto de control)
+
+**Metáfora Náutica:** Revisión de bitácora con el capitán. Confirmamos que el rumbo trazado sigue siendo el correcto.
+
+**Descripción Detallada:** Validación del diseño funcional y técnico con el cliente. Revisión de expectativas, cambios de alcance y ajustes necesarios antes de avanzar al desarrollo.
+
+**Actividades:**
+
+- Presentación de entregables.
+- Sesión de retroalimentación con cliente.
+- Registro de acuerdos y ajustes.
+- Definición de indicadores de éxito.
+
+**Entradas:**
+
+- Entregables de fases previas, requerimientos.
+
+**Salidas:**
+
+- Validación formal de diseño funcional, retroalimentación registrada, ajustes autorizados, y actualización del manifiesto del proyecto.
+
+---
+
+### 5. Boceto técnico
 
 **Metáfora Náutica:** Planos del casco y distribución interna. Se define la arquitectura técnica y los puntos de conexión del navío con otros sistemas o mares.
 
@@ -81,6 +150,7 @@ Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructura
 - Diseño de arquitectura técnica.
 - Definición de modelos de datos.
 - Redacción de estructura de endpoints.
+- Comunicación de la arquitectura técnica al equipo.
 
 **Entradas:**
 
@@ -88,11 +158,11 @@ Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructura
 
 **Salidas:**
 
-- Diagrama técnico, elección de stack tecnológico, endpoints definidos, estructura de base de datos inicial.
+- Diagrama técnico, elección de stack tecnológico, endpoints definidos, estructura de base de datos inicial, y actualización al manifiesto del proyecto.
 
 ---
 
-### 5. Definición modular de la implementación
+### 6. Definición modular de la implementación
 
 **Metáfora Náutica:** Arqueo de compartimentos. Se identifican las secciones del navío y su ensamblaje lógico.
 
@@ -111,28 +181,6 @@ Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructura
 **Salidas:**
 
 - Módulos definidos, infraestructura planificada, dependencias anotadas.
-
----
-
-### 6. Interacción con el cliente (punto de control)
-
-**Metáfora Náutica:** Revisión de bitácora con el capitán. Confirmamos que el rumbo trazado sigue siendo el correcto.
-
-**Descripción Detallada:** Validación del diseño funcional y técnico con el cliente. Revisión de expectativas, cambios de alcance y ajustes necesarios antes de avanzar al desarrollo.
-
-**Actividades:**
-
-- Presentación de entregables.
-- Sesión de retroalimentación con cliente.
-- Registro de acuerdos y ajustes.
-
-**Entradas:**
-
-- Entregables de fases previas, requerimientos.
-
-**Salidas:**
-
-- Validación formal, retroalimentación registrada, ajustes autorizados.
 
 ---
 
@@ -199,6 +247,23 @@ Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructura
 **Salidas:**
 
 - Reportes de pruebas, incidencias registradas, correcciones aplicadas.
+
+---
+
+### 10. Punto de control de calidad
+
+**Metáfora Náutica:** Revisión final del capitán. Validamos que la embarcación esté lista para zarpar.
+**Descripción Detallada:** Revisión de los resultados de QA, validación de que se cumplan los criterios de aceptación y que el producto esté listo para la entrega o despliegue.
+
+**Actividades:**
+
+- Revisión de resultados de QA.
+- Validación de criterios de aceptación.
+- Confirmación de que el producto cumple con los estándares de calidad.
+**Entradas:**
+- Resultados de pruebas QA, checklist de calidad.
+**Salidas:**
+- Validación de calidad, checklist de aceptación, autorización para despliegue.
 
 ---
 
