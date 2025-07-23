@@ -1,6 +1,8 @@
-## Procedimiento de Desarrollo - Astillero Digital
+# Procedimiento de Desarrollo - Astillero Digital
 
 Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructurado, integrando nuestra visión de innovación, documentación y evolución. Este es el ancla de cada proyecto, desde la "Exploración ligera" de un Barco de papel hasta la "Navegación continua" de un Trasatlántico.
+
+## Fases del Procedimiento de Desarrollo
 
 ### 1. Análisis inicial de requisitos
 
@@ -18,7 +20,13 @@ Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructura
 
 **Entradas:**
 
-- Inspiraciones, ideas del cliente, necesidades detectadas, entrevistas, referencias visuales, tendencias tecnológicas, visión del negocio.
+- Inspiraciones
+- Ideas del cliente
+- Necesidades detectadas
+- Entrevistas
+- Referencias visuales
+- Tendencias tecnológicas
+- Visión del negocio.
 
 **Salidas:**
 
@@ -42,8 +50,10 @@ Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructura
 
      - **Zona de Navegación (Contexto de Operación):**
        - (Indicar la opción discutida: Laguna, Río, Mar Abierto, etc., y qué significa para el proyecto. Ej: "Mar Abierto, indicando un mercado competitivo y con grandes oportunidades").
+       - Justificación de la elección: (Explicar por qué se eligió esa zona, considerando factores como el mercado, la competencia y los riesgos).
      - **Tipo de Embarcación (Naturaleza del Producto):**
        - (Indicar la opción discutida: Barco de papel, Velero Interactivo, Submarino, etc., y qué implica. Ej: "Velero Interactivo, sugiriendo un producto ágil, que se adapta a las condiciones y requiere la participación del usuario").
+       - Justificación de la elección: (Explicar por qué se eligió ese tipo de embarcación, considerando las características del producto y las expectativas del cliente).
 
   4. **Características y Requerimientos**
 
@@ -76,43 +86,67 @@ Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructura
 
 **Metáfora Náutica:** Elección de la corriente y el casco. Definimos el tipo de aguas que navegaremos (zona de navegación) y el tipo de embarcación que mejor se adapta a la travesía.
 
-**Descripción Detallada:** Se determina si el proyecto pertenece a una laguna, río, mar abierto o inmersión profunda. Luego se elige la embarcación ideal: Barco de papel, Velero Interactivo, Submarino, Trasatlántico, etc. Esto guía las tecnologías, tiempos y recursos necesarios.
+**Descripción Detallada:** En esta fase se analiza el contexto del proyecto para determinar la zona de navegación más adecuada (laguna, río, mar abierto, inmersión profunda), considerando factores como el mercado, la competencia, el alcance y los riesgos. Posteriormente, se selecciona el tipo de embarcación que mejor representa la naturaleza y necesidades del producto (Barco de papel, Velero Interactivo, Submarino, Trasatlántico, etc.), lo que influye directamente en la estrategia tecnológica, los tiempos estimados y los recursos requeridos. La elección se justifica en función de los objetivos, restricciones y expectativas del cliente, y se documenta para orientar el desarrollo y la gestión del proyecto.
 
 **Actividades:**
 
-- Evaluación del contexto y complejidad.
-- Mapeo de categoría según el problema.
-- Elección del tipo de embarcación.
+- Análisis del contexto de operación y mercado.
+- Evaluación de la complejidad, riesgos y oportunidades.
+- Mapeo de la categoría de navegación según el problema y los objetivos.
+- Selección del tipo de embarcación más adecuado para el proyecto.
+- Justificación detallada de la elección de zona y embarcación.
+- Documentación de la decisión en la bitácora de navegación.
+- Actualización del manifiesto del proyecto con la categoría y embarcación seleccionadas.
+- Generación y registro de las instrucciones iniciales para agentes IA (copilot-instructions).
 
 **Entradas:**
 
-- Requisitos, alcance, recursos disponibles.
+- Requisitos iniciales del proyecto.
+- Alcance preliminar definido.
+- Recursos disponibles y restricciones identificadas.
+- Perfil de usuarios y casos de uso principales.
+- Inspiraciones y referencias del cliente.
 
 **Salidas:**
 
-- Definición de la categoría de navegación, tipo de embarcación asignado, y justificación de la elección.
-
----
+- Definición formal de la categoría de navegación del proyecto.
+- Tipo de embarcación asignado y justificación documentada.
+- Actualización del manifiesto del proyecto reflejando las decisiones tomadas.
+- Registro en la bitácora de navegación sobre el análisis y selección realizados.
+- Creación y documentación de las copilot-instructions iniciales para agentes IA.
 
 ### 3. Boceto funcional
 
 **Metáfora Náutica:** Croquis de cubierta y planos del timón. Visualizamos el flujo de navegación del usuario antes de construir el navío.
 
-**Descripción Detallada:** Aquí se crean wireframes y prototipos navegables para plataformas web, o diagramas de flujo y mapeos de actores para automatizaciones. Se definen los flujos de usuario y las interacciones clave.
+**Descripción Detallada:** En esta fase se conceptualiza y visualiza la experiencia del usuario mediante la creación de wireframes, prototipos navegables y diagramas de flujo. Se identifican y documentan los módulos funcionales, sus interacciones y los puntos clave de navegación. El objetivo es anticipar la estructura, los flujos y las interacciones principales, facilitando la validación temprana con el equipo y el cliente. Se consideran distintos escenarios de uso, accesibilidad y adaptabilidad, asegurando que la solución propuesta responda a los requisitos y expectativas definidos.
 
 **Actividades:**
 
-- Diseño de wireframes.
-- Validación de flujos con el equipo.
-- Prototipado navegable.
+- Identificación y desglose de módulos funcionales.
+- Diseño detallado de la interacción entre módulos y componentes.
+- Elaboración de wireframes para cada vista o pantalla relevante.
+- Creación de diagramas de flujo de usuario y mapeo de actores.
+- Desarrollo de prototipos navegables para validar la experiencia.
+- Revisión y validación interna de flujos y wireframes con el equipo.
+- Recopilación de retroalimentación y ajustes iterativos.
+- Documentación de decisiones y cambios en la bitácora de navegación.
 
 **Entradas:**
 
-- Requisitos definidos, categoría y tipo de embarcación.
+- Requisitos funcionales y no funcionales definidos.
+- Categoría de navegación y tipo de embarcación seleccionados.
+- Inspiraciones visuales y referencias del cliente.
+- Alcance preliminar y perfiles de usuario.
 
 **Salidas:**
 
-- Wireframes, flujos de usuario, prototipo funcional, interacciones clave, actualización al manifiesto del proyecto.
+- Wireframes detallados y diagramas de flujo de usuario.
+- Prototipo funcional navegable.
+- Listado y documentación de módulos y componentes clave.
+- Registro de interacciones principales y escenarios de uso.
+- Actualización del manifiesto del proyecto con nuevos flujos y módulos.
+- Referencias en la bitácora de navegación sobre decisiones y validaciones realizadas.
 
 ---
 
@@ -120,22 +154,33 @@ Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructura
 
 **Metáfora Náutica:** Revisión de bitácora con el capitán. Confirmamos que el rumbo trazado sigue siendo el correcto.
 
-**Descripción Detallada:** Validación del diseño funcional y técnico con el cliente. Revisión de expectativas, cambios de alcance y ajustes necesarios antes de avanzar al desarrollo.
+**Descripción Detallada:** En esta fase se realiza una validación exhaustiva del diseño funcional y técnico directamente con el cliente, asegurando que las expectativas estén alineadas y que el alcance del proyecto sea el adecuado antes de iniciar el desarrollo. Se revisan los entregables generados (wireframes, diagramas, arquitectura técnica), se identifican posibles ajustes o cambios solicitados, y se acuerdan los indicadores de éxito que permitirán medir el cumplimiento de los objetivos. Todo acuerdo, retroalimentación y decisión relevante se documenta en la bitácora de navegación y se actualiza el manifiesto del proyecto.
 
 **Actividades:**
 
-- Presentación de entregables.
-- Sesión de retroalimentación con cliente.
-- Registro de acuerdos y ajustes.
-- Definición de indicadores de éxito.
+- Presentación detallada de los entregables funcionales y técnicos al cliente.
+- Demostración de flujos de usuario y módulos clave mediante prototipos o wireframes.
+- Revisión conjunta de la arquitectura técnica propuesta.
+- Sesión estructurada de retroalimentación y levantamiento de observaciones.
+- Registro de acuerdos, cambios de alcance y decisiones tomadas.
+- Definición y validación de indicadores de éxito y criterios de aceptación.
+- Actualización de la bitácora de navegación y del manifiesto del proyecto con los cambios acordados.
 
 **Entradas:**
 
-- Entregables de fases previas, requerimientos.
+- Wireframes y prototipos funcionales.
+- Diagramas de flujo de usuario.
+- Arquitectura técnica preliminar.
+- Requerimientos funcionales y no funcionales definidos.
+- Documentación de fases previas (bitácora, manifiesto).
 
 **Salidas:**
 
-- Validación formal de diseño funcional, retroalimentación registrada, ajustes autorizados, y actualización del manifiesto del proyecto.
+- Validación formal y registrada del diseño funcional y técnico.
+- Retroalimentación y observaciones documentadas.
+- Acuerdos y ajustes de alcance autorizados.
+- Indicadores de éxito y criterios de aceptación definidos.
+- Actualización del manifiesto del proyecto y registro en la bitácora de navegación.
 
 ---
 
@@ -143,127 +188,171 @@ Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructura
 
 **Metáfora Náutica:** Planos del casco y distribución interna. Se define la arquitectura técnica y los puntos de conexión del navío con otros sistemas o mares.
 
-**Descripción Detallada:** Se establece la arquitectura técnica de la solución, tecnologías a usar, definición de endpoints, triggers, modelos de datos y dependencias. Se consideran los requisitos de seguridad, privacidad y escalabilidad.
+**Descripción Detallada:** En esta fase se diseña la arquitectura técnica que sustentará la solución. Se planifica la infraestructura necesaria (contenedores, dominios, certificados), se seleccionan las tecnologías y herramientas a utilizar, y se definen los modelos de datos, endpoints, triggers y dependencias. Además, se consideran los requisitos de seguridad, privacidad y escalabilidad para asegurar que el sistema sea robusto y adaptable. El objetivo es establecer una base técnica clara y comunicable para el desarrollo.
 
 **Actividades:**
 
-- Diseño de arquitectura técnica.
-- Definición de modelos de datos.
-- Redacción de estructura de endpoints.
-- Comunicación de la arquitectura técnica al equipo.
+- Planificación de la infraestructura y recursos técnicos.
+- Diseño y documentación de la arquitectura técnica.
+- Definición y modelado de datos.
+- Estructuración y documentación de endpoints y triggers.
+- Identificación y registro de dependencias técnicas.
+- Comunicación de la arquitectura técnica al equipo de desarrollo.
 
 **Entradas:**
 
-- Boceto funcional, requisitos técnicos.
+- Boceto funcional validado.
+- Requisitos técnicos y no funcionales.
+- Alcance y objetivos definidos.
 
 **Salidas:**
 
-- Diagrama técnico, elección de stack tecnológico, endpoints definidos, estructura de base de datos inicial, y actualización al manifiesto del proyecto.
+- Diagrama técnico de arquitectura.
+- Selección y justificación del stack tecnológico.
+- Endpoints y triggers definidos y documentados.
+- Estructura inicial de la base de datos.
+- Listado de dependencias técnicas.
+- Actualización del manifiesto del proyecto.
 
 ---
 
-### 6. Definición modular de la implementación
-
-**Metáfora Náutica:** Arqueo de compartimentos. Se identifican las secciones del navío y su ensamblaje lógico.
-
-**Descripción Detallada:** Se detallan los componentes o módulos, sus responsabilidades y relaciones. Se configuran los entornos de desarrollo, pruebas y producción, y se planifica la infraestructura (contenedores, dominios, certificados).
-
-**Actividades:**
-
-- Listado y descripción de módulos.
-- Diseño de interacción entre módulos.
-- Planeación de la infraestructura.
-
-**Entradas:**
-
-- Boceto técnico, flujos funcionales.
-
-**Salidas:**
-
-- Módulos definidos, infraestructura planificada, dependencias anotadas.
-
----
-
-### 7. Setup del entorno de desarrollo
+### 6. Setup del entorno de desarrollo
 
 **Metáfora Náutica:** Preparación del astillero. Se construye el espacio donde se ensamblará la embarcación.
 
-**Descripción Detallada:** Configuración de entornos de trabajo, instalación de herramientas, dependencias, librerías y CI/CD pipelines. Esto asegura fluidez en el proceso de construcción.
+**Descripción Detallada:** En esta fase se prepara y configura el entorno técnico necesario para el desarrollo. Incluye la instalación y ajuste de herramientas de desarrollo, la configuración de repositorios y ramas, la gestión de dependencias, la integración de pipelines de CI/CD, la definición de variables de entorno y la documentación de scripts automatizados. El objetivo es garantizar que el equipo cuente con un espacio de trabajo eficiente, seguro y reproducible, facilitando la colaboración y la trazabilidad de cambios.
 
 **Actividades:**
 
-- Instalación de herramientas.
-- Configuración de repositorios y entornos.
-- Integración de pipelines.
+- Instalación y configuración de IDEs, editores y herramientas de desarrollo.
+- Creación y estructuración de repositorios (Git, control de versiones).
+- Definición y configuración de ramas de trabajo y flujos de colaboración.
+- Instalación y gestión de dependencias y librerías necesarias.
+- Configuración de variables de entorno y archivos de configuración.
+- Integración y prueba de pipelines de CI/CD (automatización de builds, pruebas y despliegues).
+- Documentación de scripts y flujos automatizados.
+- Verificación de acceso y permisos para el equipo.
+- Registro de decisiones y pasos en la bitácora de navegación.
 
 **Entradas:**
 
-- Infraestructura planificada.
+- Infraestructura planificada y arquitectura técnica definida.
+- Stack tecnológico seleccionado.
+- Requerimientos de seguridad y colaboración.
+- Documentación técnica previa.
 
 **Salidas:**
 
-- Entorno listo, herramientas instaladas, flujo de trabajo técnico funcional.
+- Entorno de desarrollo funcional y documentado.
+- Herramientas y dependencias instaladas y configuradas.
+- Repositorios y ramas listos para trabajo colaborativo.
+- Pipelines de CI/CD integrados y operativos.
+- Scripts y flujos automatizados documentados.
+- Registro en la bitácora de navegación sobre la configuración realizada.
 
 ---
 
-### 8. Desarrollo modular
+### 7. Desarrollo modular
 
 **Metáfora Náutica:** Ensamblaje del casco. Se construye la embarcación módulo por módulo.
 
-**Descripción Detallada:** Implementación del diseño técnico, maquetado, animaciones, lógica backend, automatizaciones, integraciones, etc.
+**Descripción Detallada:** En esta fase se lleva a cabo la implementación modular del sistema, siguiendo el diseño técnico y funcional previamente validado. Se desarrollan los distintos componentes y funcionalidades, asegurando la integración eficiente entre frontend y backend, la correcta gestión de datos, la automatización de procesos y la incorporación de animaciones y elementos interactivos. Se realizan pruebas internas por módulo, se documentan decisiones técnicas y se ajustan los entregables conforme a los estándares definidos. La colaboración entre los miembros del equipo y la trazabilidad de cambios son clave para garantizar la calidad y escalabilidad del producto.
 
 **Actividades:**
 
-- Desarrollo backend y frontend.
-- Integración de contenido y APIs.
-- Validación interna por módulo.
+- Desarrollo de módulos backend (APIs, lógica de negocio, gestión de datos).
+- Implementación de módulos frontend (maquetado, componentes visuales, animaciones, interactividad).
+- Integración de contenido dinámico y estático.
+- Conexión e integración de APIs y servicios externos.
+- Automatización de procesos y flujos internos.
+- Pruebas unitarias y de integración por módulo.
+- Documentación técnica de cada módulo y registro de decisiones en la bitácora de navegación.
+- Revisión y validación interna de funcionalidades desarrolladas.
+- Ajuste iterativo según retroalimentación interna.
 
 **Entradas:**
 
-- Arquitectura técnica, entorno listo.
+- Arquitectura técnica validada.
+- Boceto funcional y diagramas de flujo.
+- Entorno de desarrollo configurado.
+- Requerimientos funcionales y no funcionales.
+- Documentación de dependencias y endpoints.
 
 **Salidas:**
 
-- Componentes funcionales, funcionalidades listas, integración interna completada.
+- Módulos backend y frontend funcionales.
+- Componentes integrados y validados internamente.
+- Automatizaciones implementadas y documentadas.
+- Registro de pruebas y validaciones por módulo.
+- Actualización de la bitácora de navegación y del manifiesto del proyecto.
+- Documentación técnica de los componentes desarrollados.
+- Integración interna completada y lista para pruebas QA.
 
 ---
 
-### 9. Pruebas manuales y checklist QA
+### 8. Pruebas manuales y checklist QA
 
 **Metáfora Náutica:** Inspección de cubierta y motores. Probamos estabilidad, rendimiento y seguridad de la embarcación.
 
-**Descripción Detallada:** Se ejecutan pruebas funcionales, de carga, usabilidad, accesibilidad, rendimiento y validación de criterios definidos. Se aplica un checklist QA.
+**Descripción Detallada:** En esta fase se realizan pruebas exhaustivas sobre las funcionalidades desarrolladas, abarcando aspectos de funcionalidad, carga, usabilidad, accesibilidad, rendimiento y seguridad. Se utiliza un checklist QA estructurado para validar que cada módulo cumple con los criterios de aceptación y estándares definidos. Se documentan incidencias, se priorizan correcciones y se verifica la resolución de errores antes de avanzar a la siguiente etapa.
 
 **Actividades:**
 
-- Ejecución de pruebas manuales.
-- Validación de criterios de aceptación.
-- Corrección de errores críticos.
+- Ejecución de pruebas manuales sobre cada módulo y flujo funcional.
+- Validación de criterios de aceptación y requisitos funcionales/no funcionales.
+- Pruebas de carga y rendimiento en escenarios clave.
+- Evaluación de usabilidad y accesibilidad según estándares aplicables.
+- Revisión de seguridad básica y cumplimiento normativo.
+- Registro y documentación de incidencias detectadas.
+- Priorización y corrección de errores críticos y mejoras identificadas.
+- Actualización del checklist QA y reporte de resultados.
+- Registro de decisiones y acciones en la bitácora de navegación.
 
 **Entradas:**
 
-- Funcionalidades implementadas.
+- Funcionalidades implementadas y módulos desarrollados.
+- Checklist QA definido.
+- Criterios de aceptación y requisitos documentados.
+- Documentación técnica y funcional previa.
 
 **Salidas:**
 
-- Reportes de pruebas, incidencias registradas, correcciones aplicadas.
+- Reportes detallados de pruebas realizadas.
+- Registro de incidencias y errores detectados.
+- Checklist QA actualizado y validado.
+- Correcciones aplicadas y mejoras documentadas.
+- Registro en la bitácora de navegación sobre pruebas y acciones tomadas.
 
 ---
 
-### 10. Punto de control de calidad
+### 9. Punto de control de calidad
 
 **Metáfora Náutica:** Revisión final del capitán. Validamos que la embarcación esté lista para zarpar.
-**Descripción Detallada:** Revisión de los resultados de QA, validación de que se cumplan los criterios de aceptación y que el producto esté listo para la entrega o despliegue.
+
+**Descripción Detallada:** En esta fase se realiza una revisión exhaustiva de los resultados de QA y se valida que todas las funcionalidades, requisitos y criterios de aceptación estén completamente cumplidos. Se verifica que el producto cumpla con los estándares de calidad definidos, incluyendo aspectos de rendimiento, seguridad, usabilidad y accesibilidad. Se documentan las validaciones realizadas y se autoriza formalmente el producto para su entrega o despliegue, asegurando que no existan incidencias críticas pendientes.
 
 **Actividades:**
 
-- Revisión de resultados de QA.
-- Validación de criterios de aceptación.
-- Confirmación de que el producto cumple con los estándares de calidad.
+- Análisis detallado de los reportes de pruebas QA y checklist de calidad.
+- Validación de cumplimiento de todos los criterios de aceptación y requisitos funcionales/no funcionales.
+- Revisión de correcciones aplicadas y verificación de resolución de incidencias.
+- Evaluación final de estándares de calidad: rendimiento, seguridad, usabilidad y accesibilidad.
+- Registro de validaciones y acuerdos en la bitácora de navegación.
+- Autorización formal para la entrega o despliegue del producto.
+
 **Entradas:**
-- Resultados de pruebas QA, checklist de calidad.
+
+- Reportes de pruebas QA realizadas.
+- Checklist de calidad y criterios de aceptación definidos.
+- Documentación de incidencias y correcciones aplicadas.
+- Estándares de calidad y requisitos del proyecto.
+
 **Salidas:**
-- Validación de calidad, checklist de aceptación, autorización para despliegue.
+
+- Validación formal de calidad y cumplimiento de criterios de aceptación.
+- Checklist de aceptación actualizado y firmado.
+- Autorización documentada para entrega o despliegue.
+- Registro de la revisión y acuerdos en la bitácora de navegación.
 
 ---
 
@@ -271,21 +360,34 @@ Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructura
 
 **Metáfora Náutica:** Cartas de navegación y manual de tripulación. Se registran instrucciones, mapas e indicaciones para quien use o dé mantenimiento al navío.
 
-**Descripción Detallada:** Se elaboran documentos técnicos (diagramas, flujos, endpoints) y manuales de usuario (guías, capacitaciones, tutoriales).
+**Descripción Detallada:** En esta fase se produce y organiza toda la documentación esencial para el uso, mantenimiento y evolución del sistema. Se desarrollan manuales técnicos (diagramas de arquitectura, flujos de datos, endpoints, dependencias, scripts automatizados) y manuales de usuario (guías paso a paso, tutoriales interactivos, materiales de capacitación y preguntas frecuentes). La documentación debe ser clara, accesible y alineada con los entregables del proyecto, facilitando la transferencia de conocimiento tanto al equipo técnico como a los usuarios finales. Se incluyen referencias cruzadas a la bitácora de navegación y al manifiesto del proyecto para asegurar trazabilidad y actualización continua.
 
 **Actividades:**
 
-- Redacción de manuales.
-- Diagramación técnica.
-- Preparación de materiales de capacitación.
+- Redacción y estructuración del manual técnico (diagramas, arquitectura, endpoints, dependencias, scripts).
+- Elaboración de manuales de usuario (guías de uso, tutoriales, materiales de capacitación, FAQs).
+- Preparación de materiales de onboarding y capacitación para usuarios y administradores.
+- Actualización y referencia cruzada de la documentación en la bitácora de navegación y manifiesto.
+- Validación interna de la documentación con el equipo y revisión con usuarios clave.
+- Organización y publicación de la documentación en repositorios accesibles.
 
 **Entradas:**
 
-- Proyecto implementado, pruebas QA (paso 9), flujos funcionales (paso 3), arquitectura técnica (paso 4), componentes desarrollados (paso 8), bitácora de navegación(paso 1).
+- Sistema implementado y validado.
+- Reportes y checklist de QA (paso 9).
+- Flujos funcionales y wireframes (paso 3).
+- Arquitectura técnica y diagramas (paso 5).
+- Componentes y módulos desarrollados (paso 8).
+- Registro de decisiones y cambios en la bitácora de navegación.
+- Retroalimentación de usuarios y equipo.
 
 **Salidas:**
 
-- Manual técnico, manual de usuario, materiales de capacitación.
+- Manual técnico completo y actualizado.
+- Manual de usuario y materiales de capacitación publicados.
+- Documentación de onboarding y FAQs.
+- Referencias y enlaces en la bitácora y manifiesto.
+- Documentación accesible para usuarios y equipo técnico.
 
 ---
 
@@ -293,21 +395,35 @@ Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructura
 
 **Metáfora Náutica:** Registro de millas recorridas y condiciones de navegación. La bitácora se cierra al llegar a puerto, con registro de travesía, rendimiento, obstáculos y soluciones abordadas.
 
-**Descripción Detallada:** Se registra el cierre de la bitácora diaria, las métricas de desempeño técnico y funcional, errores críticos, soluciones y decisiones tomadas.
+**Descripción Detallada:** En esta fase se realiza el cierre formal de la bitácora de navegación, consolidando toda la información relevante sobre el ciclo de vida del proyecto. Se recopilan y analizan las métricas de desempeño técnico y funcional, se documentan los errores críticos encontrados, las soluciones implementadas y las decisiones clave tomadas durante el desarrollo. Además, se registran los indicadores de éxito (KPIs) y se elabora un informe de rendimiento que incluye lecciones aprendidas y recomendaciones para futuras travesías.
 
 **Actividades:**
 
-- Revisión y cierre de la bitácora de navegación.
-- Registro de indicadores clave (KPIs).
-- Análisis de desempeño técnico y funcional.
+- Revisión exhaustiva de todas las entradas de la bitácora de navegación.
+- Consolidación y cierre formal de la bitácora final del proyecto.
+- Recopilación y análisis de indicadores clave de desempeño (KPIs) técnicos y funcionales.
+- Documentación de errores críticos, incidencias y soluciones aplicadas.
+- Registro de decisiones estratégicas y cambios relevantes durante el desarrollo.
+- Elaboración de informe de rendimiento y lecciones aprendidas.
+- Referencia cruzada de la bitácora con el manifiesto y otros entregables documentales.
 
 **Entradas:**
 
-- Resultados de QA (paso 9), documentación técnica (paso 10), retroalimentación (paso 13), decisiones de desarrollo (paso 8), planificación (paso 2), notas de infraestructura (paso 5).
+- Resultados de QA y checklist de calidad (paso 9).
+- Documentación técnica y manuales de usuario (paso 10).
+- Retroalimentación de usuarios y equipo (paso 13).
+- Decisiones y registros de desarrollo modular (paso 8).
+- Planificación inicial y actualizaciones de alcance (paso 2).
+- Notas y registros de infraestructura técnica (paso 5).
+- Entradas previas de la bitácora de navegación.
 
 **Salidas:**
 
-- Bitácora final cerrada, indicadores clave registrados, informe de rendimiento y lecciones aprendidas.
+- Bitácora final cerrada y archivada.
+- Indicadores clave de desempeño registrados y documentados.
+- Informe de rendimiento técnico y funcional.
+- Registro de lecciones aprendidas y recomendaciones para futuras iteraciones.
+- Referencias y enlaces actualizados en el manifiesto y documentación del proyecto.
 
 ---
 
@@ -315,21 +431,36 @@ Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructura
 
 **Metáfora Náutica:** Zarpamos al mar abierto. El navío se entrega al cliente o se lanza al entorno productivo.
 
-**Descripción Detallada:** Compilación de entregables, despliegue del sistema, demos funcionales, configuración de monitoreo y backups.
+**Descripción Detallada:** En esta fase se consolida y verifica el entregable final, realizando el despliegue del sistema en el entorno productivo o de demo. Se ejecutan pruebas finales de funcionamiento, se configura el monitoreo y los backups automáticos, y se valida la correcta publicación de la documentación y materiales de soporte. Se asegura que todos los criterios de aceptación y checklist de producción estén cumplidos antes de la entrega formal al cliente o usuarios finales.
 
 **Actividades:**
 
-- Preparación del entregable.
-- Despliegue en entorno productivo.
-- Activación de monitoreo y backups.
+- Preparación y empaquetado del entregable final (aplicación, documentación, manuales).
+- Ejecución de pruebas finales en el entorno de producción o demo.
+- Despliegue del sistema y verificación de accesibilidad y funcionamiento.
+- Configuración y activación de monitoreo de sistema y backups automáticos.
+- Publicación de documentación técnica y de usuario en los repositorios definidos.
+- Validación del checklist de producción y criterios de aceptación.
+- Registro de la entrega y acciones realizadas en la bitácora de navegación.
+- Presentación de demo funcional al cliente o usuarios clave (si aplica).
+- Obtención de confirmación de recepción y conformidad por parte del cliente.
 
 **Entradas:**
 
-- Validación QA, documentación completa.
+- Validación QA y checklist de calidad completados.
+- Documentación técnica y manuales de usuario actualizados.
+- Reportes de pruebas y correcciones aplicadas.
+- Configuración de infraestructura y acceso a entorno productivo.
+- Bitácora de navegación con registro de fases previas.
 
 **Salidas:**
 
-- Producto entregado o publicado, monitoreo activo, checklist de producción aplicado.
+- Producto entregado, publicado o desplegado en entorno productivo/demo.
+- Monitoreo y backups activos y verificados.
+- Documentación técnica y de usuario accesible para el cliente y equipo.
+- Checklist de producción validado y registrado.
+- Registro formal de entrega y demo en la bitácora de navegación.
+- Confirmación de recepción y conformidad por parte del cliente.
 
 ---
 
@@ -337,21 +468,34 @@ Cada "travesía náutica" en Astillero Digital sigue un procedimiento estructura
 
 **Metáfora Náutica:** Corrección de rumbo y ajustes de velas. Escuchamos los vientos del cliente y preparamos nuevas expediciones.
 
-**Descripción Detallada:** Análisis de la retroalimentación inicial, métricas de uso, oportunidades de mejora y planificación de nuevas versiones.
+**Descripción Detallada:** En esta fase se recopila y analiza la retroalimentación de usuarios y stakeholders tras la entrega o despliegue del producto. Se revisan métricas de uso, incidencias reportadas y oportunidades de mejora, priorizando acciones correctivas y evolutivas. El objetivo es mantener la mejora continua, planificar nuevas versiones y asegurar que el producto se adapte a las necesidades cambiantes del cliente y del mercado.
 
 **Actividades:**
 
-- Recolección de feedback.
-- Priorización de mejoras.
-- Planificación de siguientes iteraciones.
+- Recolección sistemática de feedback de usuarios, equipo y stakeholders.
+- Análisis de métricas de uso, logs y reportes de incidencias.
+- Identificación y documentación de oportunidades de mejora y nuevas funcionalidades.
+- Priorización de cambios y elaboración de propuestas de mejora.
+- Revisión y actualización del backlog de producto.
+- Planificación de iteraciones futuras y definición de entregables evolutivos.
+- Registro de decisiones, acciones y cambios en la bitácora de navegación.
+- Comunicación de mejoras y roadmap al cliente y equipo.
 
 **Entradas:**
 
-- Feedback de usuarios, métricas de uso, logs.
+- Feedback de usuarios y stakeholders.
+- Métricas de uso y desempeño del sistema.
+- Logs de errores e incidencias reportadas.
+- Documentación técnica y funcional previa.
+- Backlog de producto y bitácora de navegación.
 
 **Salidas:**
 
-- Revisión de backlog, bitácora de cambios, plan de mejoras o iteraciones futuras.
+- Informe de retroalimentación y análisis de uso.
+- Backlog actualizado con mejoras y nuevas funcionalidades priorizadas.
+- Plan de iteraciones y roadmap de evolución del producto.
+- Registro de cambios y decisiones en la bitácora de navegación.
+- Actualización del manifiesto del proyecto si aplica.
+- Comunicación formal de mejoras y próximos pasos al cliente y equipo.
 
 > Nota: La gestión de riesgos, validación de cambios y conformidad normativa se desarrolla en procedimientos independientes del SGC y solo se menciona cuando aplica. Cada etapa produce documentación o entregables integrables al ciclo documental ISO 9001.
-
